@@ -8,6 +8,8 @@
     <title>Document</title>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+        integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="./home.css" />
@@ -63,32 +65,17 @@
     </div>
     <div class="wrapper">
         <article class="content">
-            <h1 class="content-header">About Me</h1>
-            <p>
-                <strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, quas beatae. Recusandae
-                    veritatis asperiores odio blanditiis saepe molestiae, libero deserunt.</strong>
-                <br>
-                In this layout, we display the areas in source order for any screen
-                less that 500 pixels wide. We go to a two column layout, and then to a
-                three column layout by redefining the grid, and the placement of items
-                on the grid.
-            </p>
-            <br>
-            <div>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione placeat repudiandae similique
-                    consequatur ipsa ab illo, vitae rerum nisi molestias optio dolorum officia. Ea quam reprehenderit
-                    repudiandae repellendus doloremque aliquid odio cum repellat cumque optio ullam quas fuga magni aut
-                    facere consequatur, animi temporibus laboriosam perferendis? Labore delectus adipisci aperiam?
-
-                </p>
-                <img class="about-me-pic"
-                    src="https://media-exp1.licdn.com/dms/image/C4E03AQGYVu_pG83n2w/profile-displayphoto-shrink_200_200/0?e=1585180800&v=beta&t=ZCocbvdq_QGFgEuhgTy-1iULcMIKCk6eV8J89Fad4XI"
-                    alt="linkedIn picture">
-            </div>
-            <div class="youtube-vids">
-
+            <h1 class="content-header">Contact Me</h1>
+            <div class="contact-area">
+                <form class="pure-form pure-form-stacked" action="https://formspree.io/mgeabglg" method="POST">
+                    <fieldset>
+                        <input type="email" name="_replyto" placeholder="Your Email">
+                        <textarea class="pure-input-1" rows="4" cols="20" placeholder="Your message..."></textarea>
+                        <button type="submit" class="pure-button pure-button-primary">Send <i
+                                class="fa fa-envelope-o"></i>
+                        </button>
+                    </fieldset>
+                </form>
             </div>
         </article>
         <aside class="side">

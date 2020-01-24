@@ -285,7 +285,38 @@ img {
 
 .publications-grid {
   display: grid;
-  grid-template-columns: repeat(auto, minmax(4rem, 1fr));
+  grid-gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.content-header {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+/* Contact */
+
+.contact-area form {
+  border: 0.5px solid #d7d7d7;
+  border-radius: 2rem;
+  padding: 2rem;
+  max-width: 50%;
+  min-width: fit-content;
+}
+
+.contact-area textarea {
+  margin: 1rem 0;
+}
+
+.contact-area form button[type='submit'] {
+  /* background-image: url(https://www.pngkit.com/png/detail/188-1882365_send-button-png-send-button-icon-png.png);
+  background-repeat: no-repeat;
+  background-position: center; */
+  /* color: transparent;  Hide button text */
+  padding: 20px 70px;
+  background-color: #00b7f1;
+  /* width: 4rem; */
 }
 
 @media (max-width: 630px) {
