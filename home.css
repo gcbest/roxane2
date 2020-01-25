@@ -278,6 +278,8 @@ img {
   width: fit-content;
 }
 
+/* About Me */
+
 .about-me-pic {
   border-radius: 7rem;
   border-color: #00b7f1;
@@ -295,6 +297,17 @@ img {
   font-size: 1.5rem;
 }
 
+.youtube-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.youtube-video {
+    
+}
+
+
+
 /* Contact */
 
 .contact-area form {
@@ -310,13 +323,12 @@ img {
 }
 
 .contact-area form button[type='submit'] {
-  /* background-image: url(https://www.pngkit.com/png/detail/188-1882365_send-button-png-send-button-icon-png.png);
-  background-repeat: no-repeat;
-  background-position: center; */
-  /* color: transparent;  Hide button text */
   padding: 20px 70px;
   background-color: #00b7f1;
-  /* width: 4rem; */
+}
+
+footer h2 {
+  margin: 0 0 1rem 0;
 }
 
 @media (max-width: 630px) {
