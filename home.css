@@ -1,6 +1,6 @@
 .content {
   grid-area: content;
-  padding: 3rem;
+  margin: 1rem;
 }
 
 a {
