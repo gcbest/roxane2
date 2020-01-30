@@ -1,6 +1,16 @@
+:root {
+  --theme-color: rgb(225, 58, 68);
+  --overlay-color: rgb(215, 176, 178);
+  /* old theme color rgb(0, 183, 241)*/
+}
+
 .content {
   grid-area: content;
   margin: 1rem;
+}
+
+.logo img {
+  max-width: 80%;
 }
 
 a {
@@ -31,7 +41,7 @@ a:hover {
 
 .side li {
   list-style: square inside;
-  color: rgb(0, 183, 241);
+  color: var(--theme-color);
   border-bottom: 1px solid #d7d7d7;
   margin: 1rem;
   font-size: 1.2rem;
@@ -43,7 +53,7 @@ a:hover {
 
 .full-text {
   list-style: square inside;
-  color: rgb(0, 183, 241);
+  color: var(--theme-color);
   border-bottom: 1px solid #d7d7d7;
   margin: 1rem;
   font-size: 1.2rem;
@@ -52,7 +62,7 @@ a:hover {
 .short-text {
   display: none;
   list-style: square inside;
-  color: rgb(0, 183, 241);
+  color: var(--theme-color);
   border-bottom: 1px solid #d7d7d7;
   margin: 1rem;
   font-size: 1.2rem;
@@ -85,7 +95,11 @@ a:hover {
 .accreds img {
   max-width: 10rem;
   display: block;
-  margin: auto;
+  margin: 1rem auto;
+  border: 1px solid #d7d7d7;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  align-self: end;
 }
 
 .wrapper {
@@ -172,7 +186,7 @@ img {
   height: 5px;
   content: '';
   position: absolute;
-  background-color: #00b7f1;
+  background-color: var(--theme-color);
   width: 0%;
   bottom: 10px;
 }
@@ -217,7 +231,7 @@ img {
   left: 0;
   width: 100vw;
   z-index: 1;
-  background: #23057df2;
+  background: var(--overlay-color);
   opacity: 0.5;
 }
 
@@ -278,7 +292,7 @@ img {
   margin: 1rem 0;
   border-radius: 2rem;
   padding: 1.2rem;
-  background-color: #00b7f1;
+  background-color: var(--theme-color);
   font-size: 1.2rem;
   font-weight: 600;
   border: 0.2rem #fff solid;
@@ -290,7 +304,7 @@ img {
   margin: 1rem 0;
   border-radius: 2rem;
   padding: 1.2rem;
-  background-color: #00b7f1;
+  background-color: var(--theme-color);
   font-size: 1.2rem;
   border: 0.2rem #036382bd solid;
   font-weight: 500;
@@ -304,7 +318,7 @@ img {
   margin: 1rem 0;
   border-radius: 2rem;
   padding: 1.2rem;
-  background-color: #00b7f1;
+  background-color: var(--theme-color);
   font-size: 1.2rem;
   font-weight: 600;
   display: block;
@@ -318,7 +332,7 @@ img {
   margin: 1rem 0;
   border-radius: 2rem;
   padding: 1.2rem;
-  background-color: #00b7f1;
+  background-color: var(--theme-color);
   font-size: 1.2rem;
   border: 0.2rem #036382bd solid;
   font-weight: 500;
@@ -330,7 +344,7 @@ img {
 
 .about-me-pic {
   border-radius: 7rem;
-  border-color: #00b7f1;
+  border-color: var(--theme-color);
   margin: 1rem 0;
 }
 
@@ -379,7 +393,7 @@ img {
 
 .contact-area form button[type='submit'] {
   padding: 20px 70px;
-  background-color: #00b7f1;
+  background-color: var(--theme-color);
 }
 
 footer h2 {
@@ -394,7 +408,7 @@ footer h2 {
   .side .short-text {
     display: list-item;
     list-style: square inside;
-    color: rgb(0, 183, 241);
+    color: var(--theme-color);
     border-bottom: 1px solid #d7d7d7;
     margin: 1rem;
     font-size: 1.2rem;
@@ -425,6 +439,12 @@ footer h2 {
 
   .hero-text-small h3 {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo img {
+    max-width: 100%;
   }
 }
 
