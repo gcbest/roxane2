@@ -413,18 +413,12 @@ footer h2 {
 .mapouter {
   position: relative;
   text-align: right;
-  /* height: 500px; */
-  /* width: 488px; */
-  /* width: 50%; */
-  margin: 0 2rem;
+  margin: 0 auto;
 }
 
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
-  /* height: 500px; */
-  /* width: 488px; */
-  /* width: 50%; */
 }
 
 /************** MEDIA QUERIES **************/
@@ -441,6 +435,16 @@ footer h2 {
     border-bottom: 1px solid #d7d7d7;
     margin: 1rem;
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .mapouter {
+    margin: 0 3rem;
+  }
+
+  .gmap_canvas {
+    width: 100%;
   }
 }
 
